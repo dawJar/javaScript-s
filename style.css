@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #c1c6cc;
+}
+
+#app-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    z-index: 10;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: #eaecef;
+}
+
+.hint {
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    text-align: center;
+    color: #eaecef;
+    font-size: 24px;
+}
