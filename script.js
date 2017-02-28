@@ -62,6 +62,8 @@
                     user: newUser,
                     pass: inputPassword.value
                 }];
+                inputLogin.value = '';
+                inputPassword.value = '';
                 resultHint.innerHTML = 'new user: ' + newUser;
                 result.appendChild(resultHint);
             }
@@ -75,6 +77,8 @@
             var findAndValidateUser = users.filter(x => x.user === loginData
                                                                 && x.pass === passData);
             if (findAndValidateUser.length > 0) {
+                inputLogin.value = '';
+                inputPassword.value = '';
                 resultHint.innerHTML = 'logged in as: ' + loginData;
             } else {
                 resultHint.innerHTML = 'wrong login or password';
