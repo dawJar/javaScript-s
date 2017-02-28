@@ -25,9 +25,10 @@
     var setChuckJoke = function (e) {
         var json = JSON.parse(e.responseText)
         var chuckJoke = json.value.joke;
-
         currentJokeContainer.innerHTML = chuckJoke;
-        addToLatestJokes(chuckJoke);
+        if (currentJoke !== undefined) {
+            addToLatestJokes(chuckJoke);
+        }
         currentJoke = chuckJoke;
     };
 
