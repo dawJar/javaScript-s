@@ -9,8 +9,22 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-
-    
+    <div class="container">
+        <div id="app">
+            <div class="jumbotron">
+                <h3>Chuck Norris jokes</h3>
+                <div class="row">
+                    <div class="col-xs-10">
+                        <p id="current-joke"></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" id="fetch-data" class="btn btn-info" name="button">fech new joke</button>
+                    </div>
+                </div>
+            </div>
+            <div id="latest-jokes"></div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
