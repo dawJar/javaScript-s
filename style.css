@@ -22,7 +22,7 @@ html, body {
 .hint {
     position: fixed;
     width: 100%;
-    top: 100px;
+    top: 20%;
     text-align: center;
     color: #eaecef;
     font-size: 24px;
